@@ -147,6 +147,12 @@ header h1, header h3, .fixed-ref h1, .fixed-ref h3{
 	}
 
 
+#modal {
+	max-width: 925px;
+	margin: auto; 
+}
+
+
 /*Content div*/
 div#content {
 	width: 780px;
@@ -212,9 +218,13 @@ div#content {
 }
 
 /*Footer*/
-footer img{
+footer hr{
+	background: url(images/img-hr.png) no-repeat top center;
+	width: 72px;
+	height: 12px;
 	display: block;
 	margin: 30px auto;
+	border: none;
 
 }
 
@@ -244,6 +254,8 @@ footer img{
 .fixed-ref h3 {
 	font-family: 'Lucida Sans Unicode', Verdana, sans-serif;
 	font-size: 15px;
+	width: inherit;
+	margin: auto;
 }
 
 .fixed-ref .linked-header {
