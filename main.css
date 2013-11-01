@@ -56,7 +56,7 @@ html {
 @font-face {
 	font-family: 'CrimsonSemibold';
 	src: local('CrimsonSemibold'), url("CrimsonSemibold.otf") format("opentype");
-	font-weight: bold;
+	/*font-weight: bold;*/
 }
 /*header*/
 
@@ -227,26 +227,23 @@ footer img{
 	margin: 0 auto;
 }
 
-.hovered {
-	display: block;
-}
-
-.box:hover > .fixed-ref {
-	display: block;
-}
-
 #bc h1, #hr h1,  #cf h1  {
 	clear: both;
 	height: auto;
 	width: 825px;
 	/*margin: 10px auto;*/
 	padding: 5px;
-	font: 46px/46px 'CrimsonSemibold', 'Times New Roman', Georgia, serif;
-	font-weight: 500; 
+	font: 46px/46px  'CrimsonSemibold', 'Times New Roman' Georgia, serif;
+	font-weight: 100; 
 	font-style: normal;
 	text-align: center;
 	line-height: 1.0em;
 	letter-spacing: -1px;
+}
+
+.fixed-ref .linked-header {
+	color:#336699;
+	text-decoration: underline;
 }
 
 .arrow {
