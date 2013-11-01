@@ -52,6 +52,8 @@ html {
 	font: normal 12px/14px 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
 }
 
+
+
 /*header*/
 
 nav {
@@ -107,6 +109,9 @@ nav {
 	#sign-in a:hover {
 		color: #369;
 	}
+header {
+	min-height: 275px;
+}
 
 header img {
 	display: block;
@@ -116,11 +121,11 @@ header img {
 	top: 20px;
 }
 
-header h1, header h3 {
+header h1, header h3, .fixed-ref h1, .fixed-ref h3{
 	text-align: center;
 }
 
-	header h1 {
+	header h1, .fixed-ref h1 {
 		clear: both;
 		display: block;
 		height: auto;
@@ -131,7 +136,7 @@ header h1, header h3 {
 		text-align: center;
 	}
 
-	header h3 {
+	header h3, .fixed-ref h3 {
 		font: 20px serif;
 	}
 
@@ -143,12 +148,12 @@ div#content {
 }
 
 	.product-boxes {
-		display: block;
 		margin: auto;
-		width: 680px;
 	}
+
+
 		
-	div.product-boxes a {
+	div.product-boxes .box {
 		display: inline-block;
 		border: 1px solid #e8e8e8;
 		width: 160px;
@@ -194,7 +199,8 @@ div#content {
 		color:#cc0000;
 	}
 
-
+	
+	
 .signal-product span {
 	text-decoration: none;
 }
@@ -203,4 +209,59 @@ div#content {
 footer img{
 	display: block;
 	margin: 30px auto;
+
+}
+
+/*jQuery related-objects to hide*/
+.fixed-ref {
+	display: none;
+	text-align: center;
+	position: absolute;
+	z-index: 2;
+	max-height: 110px;
+	width: 850px;
+	text-align: center;
+/*	background-color: #fff;
+*/	margin: -244px 250px 0 0;
+}
+
+.box:hover > .fixed-ref {
+	display: block;
+}
+
+#bc h1, #hr h1,  #cf h1  {
+	clear: both;
+	height: auto;
+	width: 925px;
+	/*margin: 10px auto;*/
+	padding: 5px;
+	font: 500 46px/46px 'Crimson Semi-bold', 'Times New Roman', Georgia, serif;
+	text-align: center;
+}
+
+.left-arrow {
+		background: url(images/arrow-left.png);
+		background-repeat: no-repeat;
+		position: relative;
+		display: block;
+		height: 100px;
+		width: auto;
+		top:-20px;
+		right: -45px;
+	}
+.right-arrow {
+	background: url(images/arrow-left.png);
+	background-repeat: no-repeat;
+	position: relative;
+	display: block;
+	height: 100px;
+	width: auto;
+	top:-20px;
+	left: 45px;
+	-moz-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1)
+	filter:FlipH;
+	-ms-filter:"FlipH";
 }
