@@ -1,14 +1,14 @@
 $(function () {
     $('#box-bc').hover(function () {
-        $('#modal','#bc').toggle();
+        $('#modal,#bc').toggle();
         });
 
     $('#box-hr').hover(function () {
-    	$('#modal','#bc').toggle();
+    	$('#modal, #bc').toggle();
         });            
 
     $('#box-cf').hover(function () {
-    	$('#modal','#bc').toggle();
+    	$('#modal,#bc').toggle();
         });
             
     // Display current day of the week
