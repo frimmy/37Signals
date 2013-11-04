@@ -4,11 +4,11 @@ $(function () {
         });
 
     $('#box-hr').hover(function () {
-    	$('#modal, #bc').toggle();
+    	$('#modal, #hr').toggle();
         });            
 
     $('#box-cf').hover(function () {
-    	$('#modal,#bc').toggle();
+    	$('#modal,#cf').toggle();
         });
             
     // Display current day of the week
